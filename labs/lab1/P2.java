@@ -21,7 +21,7 @@ public class P2 {
         } else {
             grade = '\0';
         }
-        
+
         if (grade != '\0') {
             System.out.println("Grade " + grade);
         } else {

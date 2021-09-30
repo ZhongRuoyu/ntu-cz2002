@@ -27,7 +27,8 @@ public class CircleApp {
             }
             switch (choice) {
                 case 1: {
-                    System.out.println("Enter the radius to compute the area and circumference");
+                    System.out.println("Enter the radius to compute the area "
+                            + "and circumference");
                     double radius = in.nextDouble();
                     circle = new Circle(radius);
                     System.out.println("A new circle is created");
@@ -39,6 +40,9 @@ public class CircleApp {
                 }
                 case 3: {
                     circle.printCircumference();
+                    break;
+                }
+                default: {
                     break;
                 }
             }

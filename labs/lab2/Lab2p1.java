@@ -48,7 +48,8 @@ public class Lab2p1 {
                     System.out.print("Enter n: ");
                     int n = sc.nextInt();
                     int res = countDigits(n);
-                    System.out.printf(res == 0 ? "Error input\n" : ("count = " + res + "\n"));
+                    System.out.printf(res == 0 ? "Error input\n"
+                            : ("count = " + res + "\n"));
                     System.out.println();
                 }
                     break;
@@ -97,7 +98,8 @@ public class Lab2p1 {
                 ++correct;
             }
         }
-        System.out.printf("%d %s out of %d %s correct.\n", correct, (correct == 1) ? "answer" : "answers", N,
+        System.out.printf("%d %s out of %d %s correct.\n", correct,
+                (correct == 1) ? "answer" : "answers", N,
                 (correct == 1) ? "is" : "are");
         System.out.println();
     }

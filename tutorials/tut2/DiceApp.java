@@ -11,14 +11,15 @@ public class DiceApp {
         in.nextLine();
         dice1.setDiceValue();
         dice1.printDiceValue();
-        
+
         Dice dice2 = new Dice();
         System.out.println("Press <key> to roll second dice");
         in.nextLine();
         dice2.setDiceValue();
         dice2.printDiceValue();
 
-        System.out.println("Your total number is: " + (dice1.getDiceValue() + dice2.getDiceValue()));
+        System.out.println("Your total number is: "
+                + (dice1.getDiceValue() + dice2.getDiceValue()));
 
         in.close();
     }
