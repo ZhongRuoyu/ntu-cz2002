@@ -14,13 +14,11 @@ class Animal {
 
     Animal(std::string n, COLOR c);
 
-    virtual ~Animal() {
-        std::cout << "destructing Animal object " << _name << std::endl;
-    }
-
-    virtual void speak() const { std::cout << "Animal speaks" << std::endl; }
+    virtual ~Animal();
 
     virtual void move() const = 0;
+
+    virtual void speak() const;
 
    private:
     std::string _name;
@@ -33,9 +31,9 @@ class Mammal : public Animal {
 
     ~Mammal();
 
-    void move() const;
+    virtual void eat() const;
 
-    virtual void eat() const { std::cout << "Mammal eats" << std::endl; }
+    void move() const;
 };
 
 #endif /** ANIMAL_H_ */

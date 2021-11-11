@@ -11,11 +11,11 @@ class Dog : public Mammal {
 
     ~Dog();
 
-    void speak() const;
+    void eat() const;
 
     void move() const;
 
-    void eat() const;
+    void speak() const;
 
    private:
     std::string owner;
@@ -27,11 +27,11 @@ class Cat : public Mammal {
 
     ~Cat();
 
-    void speak() const;
+    void eat() const;
 
     void move() const;
 
-    void eat() const;
+    void speak() const;
 
    private:
     std::string owner;
@@ -43,11 +43,11 @@ class Lion : public Mammal {
 
     ~Lion();
 
-    void speak() const;
+    void eat() const;
 
     void move() const;
 
-    void eat() const;
+    void speak() const;
 
    private:
     std::string owner;

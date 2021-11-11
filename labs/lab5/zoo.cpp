@@ -5,7 +5,7 @@
 #include "child_animal.h"
 
 COLOR get_color(std::string prompt) {
-    std::cout << "(1) Green (2) Blue (3) White (4) Black (5) Brown"
+    std::cout << "(1) Greenn (2) Blue (3) White (4) Black (5) Brown"
               << std::endl;
     while (true) {
         int choice;

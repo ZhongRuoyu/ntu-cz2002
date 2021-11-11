@@ -34,6 +34,12 @@ Animal::Animal(std::string n, COLOR c) : _name(n), _color(c) {
               << color_to_string(c) << std::endl;
 }
 
+Animal::~Animal() {
+    std::cout << "destructing Animal object " << _name << std::endl;
+}
+
+void Animal::speak() const { std::cout << "Animal speaks" << std::endl; }
+
 Mammal::Mammal(std::string n, COLOR c) : Animal(n, c) {
     std::cout << "constructing Mammal object " << n << " with color "
               << color_to_string(c) << std::endl;
@@ -41,4 +47,7 @@ Mammal::Mammal(std::string n, COLOR c) : Animal(n, c) {
 
 Mammal::~Mammal() { std::cout << "destructing Mammal object" << std::endl; }
 
+void Mammal::eat() const { std::cout << "Mammal eats" << std::endl; }
+
 void Mammal::move() const { std::cout << "Mammal moves" << std::endl; }
+
