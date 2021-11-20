@@ -1,5 +1,6 @@
 package labs.lab4.part1;
 
+@SuppressWarnings("all")
 public class Sorting {
     // -----------------------------------------------------------------
     // Sorts the specified array of objects using the selection

@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+@SuppressWarnings("all")
 public class TextDB {
     public static final String SEPARATOR = "|";
 

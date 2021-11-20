@@ -2,6 +2,7 @@ package labs.lab4.part1;
 
 import java.util.Scanner;
 
+@SuppressWarnings("all")
 public class Numbers {
     // --------------------------------------------
     // Reads in an array of integers, sorts them,

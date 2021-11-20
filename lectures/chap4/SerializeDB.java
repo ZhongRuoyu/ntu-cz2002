@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 // Note : When structure of the Object type (the class file) in the list changed
 // the Serialized file may fail.
+@SuppressWarnings("all")
 public class SerializeDB {
     public static List readSerializedObject(String filename) {
         List pDetails = null;
