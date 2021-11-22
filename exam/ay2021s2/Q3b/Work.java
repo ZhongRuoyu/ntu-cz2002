@@ -8,6 +8,7 @@ class Work {
 
     public Work(String title) {
         this.title = title;
+        this.sub = new SubWork(this);
     }
 
     public void init() {
